@@ -1,0 +1,53 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:rgb(172, 165, 165);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.goal-container{
+    background:wheat;
+    padding:40px;
+    border-radius:20px;
+    width:500px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:blue;
+    color:white;
+    cursor:pointer;
+}
+
+.current-goal{
+    margin-top:30px;
+    
+}

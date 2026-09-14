@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitTrack Dashboard</title>
+<link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <h2>FitTrack</h2>
+
+        <li onclick="showSection('dashboardSection')">Dashboard</li>
+
+        <li onclick="showSection('exerciseSection')">Exercises</li>
+
+        <li onclick="showSection('goalSection')">Goals</li>
+
+        <li onclick="showSection('progressSection')">Progress</li>
+
+        <li onclick="showSection('profileSection')">Profile</li>
+    <a href="login.html" class="logout">logout</a>
+
+
+    
+    </aside>
+
+    <main class="main-content">
+
+        <!-- DASHBOARD -->
+        <div id="dashboardSection">
+
+            <header class="topbar">
+
+                <div>
+                    <h1 id="welcome"  class="h1">Welcome Back</h1>
+                </div>
+
+                <div class="profile">
+                    <img src="https://i.pravatar.cc/50" alt="sss">
+                </div>
+
+            </header>
+
+            <section class="stats">
+
+                <div class="card1">
+                    <h3 id="workouts">0</h3>
+                    <p>Workouts</p>
+                </div>
+
+                <div class="card1">
+                    <h3>2400</h3>
+                    <p>Calories Burned</p>
+                </div>
+
+                <div class="card1">
+                    <h3>75%</h3>
+                    <p>Goal Progress</p>
+                </div>
+
+                <div class="card1">
+                    <h3>30</h3>
+                    <p>Days Streak</p>
+                </div>
+
+            </section>
+
+            <section class="goal-section">
+
+                <div class="goal-card">
+
+                    <h2>Current Goal</h2>
+
+                    <p id="dashboardGoal">No Goal Set</p>
+
+                    <div class="progress-bar"  id="dashboardprogress">
+                        <div class="progress"></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="activity">
+
+                <div class="activity-card">
+
+                    <h2>Recent Activities</h2>
+
+                    <ul id="activityList"></ul>
+
+                </div>
+
+            </section>
+
+            <section class="exercise-form">
+
+                <h2>Add Exercise</h2>
+
+                <form id="exerciseForm">
+
+                    <input
+                    type="text"
+                    id="exerciseName"
+                    placeholder="Exercise Name">
+
+                    <input
+                    type="number"
+                    id="duration"
+                    placeholder="Duration (minutes)">
+
+                    <button type="submit" id="addwokout">
+                        Add Exercise
+                    </button>
+
+                </form>
+                <script src="../javascript/dashboard.js"></script>
+
+            </section>
+
+        </div>
+
+        <!-- EXERCISES -->
+        <div id="exerciseSection" style="display:none;">
+<link rel="stylesheet" href="../css/excercise.css">
+ <a href="dashboard.html">
+                   <img src="left.png" alt="" width="20px" height="29px"> 
+
+
+
+
+                </a>
+<div class="exercise-page">
+<div class="fix">
+        <h1>Exercises</h1>
+    <p>Choose an exercise and add it to your workout plan.</p>
+</div>
+
+
+    <div class="exercise-grid">
+
+        <div class="exercise-card">
+            <img src="https://images.pexels.com/photos/416778/pexels-photo-416778.jpeg" alt="Push Ups">
+            <h3>Push Ups</h3>
+            <p>Strengthens chest, shoulders and arms.</p>
+            <button>Add Exercise</button>
+        </div>
+
+        <div class="exercise-card">
+            <img src="https://images.pexels.com/photos/1552106/pexels-photo-1552106.jpeg" alt="Squats">
+            <h3>Squats</h3>
+            <p>Build stronger legs and glutes.</p>
+            <button>Add Exercise</button>
+        </div>
+
+        <div class="exercise-card">
+            <img src="https://images.pexels.com/photos/2294361/pexels-photo-2294361.jpeg" alt="Plank">
+            <h3>Plank</h3>
+            <p>Improves core stability and balance.</p>
+            <button>Add Exercise</button>
+        </div>
+
+        <div class="exercise-card">
+            <img src="https://images.pexels.com/photos/3764011/pexels-photo-3764011.jpeg" alt="Running">
+            <h3>Running</h3>
+            <p>Boosts endurance and burns calories.</p>
+            <button>Add Exercise</button>
+        </div>
+
+    </div>
+
+</div>
+<footer>
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>FitTrack</h2>
+            <p>
+                Helping people achieve their fitness goals through
+                workout tracking, progress monitoring, and healthy habits.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Pages</h3>
+
+            <a href="register.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+
+        <div class="footer-mission">
+            <h3>Our Mission</h3>
+
+            <p>
+                To make fitness tracking simple, accessible,
+                and motivating for everyone.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 FitTrack | Track. Improve. Succeed.</p>
+    </div>
+</footer>
+
+        </div>
+
+        <!-- GOALS -->
+        <div id="goalSection" style="display:none;">
+            <link rel="stylesheet" href="../css/goal.css">
+ <div>
+
+    
+ </div>
+
+<div class="goal-container">
+ <a href="dashboard.html">
+                   <img src="left.png" alt="" width="20px" height="29px"> 
+
+
+
+                </a>
+    <h1>Set Your Fitness Goal</h1>
+
+    <form id="goalForm">
+
+        <input
+            type="text"
+            id="goalName"
+            placeholder="Goal Name">
+
+        <input
+            type="number"
+            id="goalTarget"
+            placeholder="Target Number of Workouts">
+
+        <button type="submit">
+            Save Goal
+        </button>
+
+    </form>
+
+    <div class="current-goal">
+
+        <h2>Current Goal</h2>
+
+        <p id="goalDisplay">
+            No goal set yet
+        </p>
+
+    </div>
+
+</div>
+
+<script src="../javascript/goal.js"></script>
+
+</body>
+ <div>
+
+    
+ </div>
+
+
+  
+   
+
+    </div>
+
+
+
+        <!-- PROGRESS -->
+        <div id="progressSection" style="display:none;">
+<link rel="stylesheet" href="../css/progress.css">
+
+    <div class="container">
+             
+ <a href="dashboard.html">
+                   <img src="left.png" alt="" width="20px" height="29px"> 
+                </a>
+
+    <h1>My Fitness Progress</h1>
+
+    <div class="progress-card">
+
+        <h2>Goal Progress</h2>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="dashboardprogress">
+                0%
+            </div>
+        </div>
+
+        <p id="progressText">
+            You have completed 0% of your goal.
+        </p>
+
+</div>
+    </div>
+
+    <div class="stats">
+
+        <div class="card">
+            <h3 id="workoutCount">0</h3>
+            <p>Workouts Completed</p>
+        </div>
+
+        <div class="card">
+            <h3 id="exerciseCount">0</h3>
+            <p>Exercises Logged</p>
+        </div>
+
+        <div class="card">
+            <h3 id="goalStatus">Starting</h3>
+            <p>Status</p>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../javasript/progress.js"></script>
+        </div>
+
+        <!-- PROFILE -->
+        <div id="profileSection" style="display:none;">
+            <link rel="stylesheet" href="../css/profile.css">
+<div class="profile-container">
+
+    <div class="profile-card">
+
+        <img src="IMG_20260807_100139_739 (1).jpg" alt="Profile Picture" class="profile-img">
+
+        <h2>abana chinemeze excel</h2>
+
+        <p class="goal">Goal: Build Muscle</p>
+
+        <button>Edit Profile</button>
+
+    </div>
+
+    <div class="profile-details">
+
+        <h2>Profile Summary</h2>
+
+        <div class="info-box">
+            <p><strong>Email:</strong> abanachinemeze@gmail.com</p>
+            <p><strong>Age:</strong> 12 Years</p>
+            <p><strong>Weight:</strong> 45 kg</p>
+            <p><strong>Height:</strong> 80 cm</p>
+        </div>
+
+        <h2>Fitness Statistics</h2>
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <h3>45</h3>
+                <p>Workouts Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>12,500</h3>
+                <p>Calories Burned</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>85%</h3>
+                <p>Goal Progress</p>
+            </div>
+
+        </div>
+
+        <h2>About Me</h2>
+
+        <p class="about">
+            I am focused on improving my fitness,
+            maintaining a healthy lifestyle, and
+            achieving my workout goals through
+            consistency and dedication.
+        </p>
+<script src="../javascript/profile.js"></script>
+
+    </div>
+
+</div>
+
+     
+          </div> 
+     
+    
+     
+
+
+
+
+
+
+        </div>
+
+    </main>
+<div>
+
+</div>
+</div>
+</body>
+</html>
